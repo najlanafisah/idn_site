@@ -7,6 +7,39 @@
     <title>IDN</title>
     <link rel="shortcut icon" href="assets/logo idn 2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
+     <!-- CSS here -->
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/animate.min.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/magnific-popup.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/fontawesome-all.min.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/flaticon-skillgro.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/swiper-bundle.min.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/default-icons.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/select2.min.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/odometer.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/aos.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/plyr.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/spacing.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/tg-cursor.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/bootstrap-datepicker.min.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/global/toastr/toastr.min.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/global/nice-select/nice-select.css">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/main.css?v=1.3.0">
+     <link rel="stylesheet" href="https://emudy.ae/public/frontend/css/frontend.css?v=1.3.0">
+ 
+     <style>
+         :root {
+             --tg-theme-primary: #5751e1;
+             --tg-theme-secondary: #ffc224;
+             --tg-common-color-blue: #050071;
+             --tg-common-color-blue-2: #282568;
+             --tg-common-color-dark: #1c1a4a;
+             --tg-common-color-black: #06042e;
+             --tg-common-color-dark-2: #4a44d1;
+         }
+     </style>
+ 
 </head>
 
   <!-- Preloader -->
@@ -14,12 +47,11 @@
     <img src="assets/logo idn.png" alt="Logo Preloader" class="preloader-logo">
   </div>
 
-  <div id="intro" class="intro hidden"></div>
+  <div id="intro" class="intro hidden">
     <div class="intro-word">Innovative</div>
     <div class="intro-word">Faithful</div>
     <div class="intro-word">Empowered</div>
 </div>
-
 <body>
 
   <!-- Navbar -->
@@ -28,12 +60,12 @@
         <img src="assets/logo idn.png" alt="logo" width="70">
     </div>
     <ul class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact</a>
-    </ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+  </ul>
   </nav>
   <!-- end navbar -->l
   <section>
@@ -65,33 +97,30 @@
     </div>
   </section>
   <script>
-    // JavaScript to hide preloader after the page has loaded
-    window.addEventListener('load', function() {
-      const preloader = document.getElementById('preloader');
-      preloader.style.display = 'none';
+   window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    const intro = document.getElementById('intro');
+    const words = document.querySelectorAll('.intro-word');
+
+    // Hilangkan preloader
+    preloader.style.display = 'none';
+
+    // Tampilkan intro
+    intro.classList.remove('hidden');
+
+    // Tampilkan setiap kata dengan animasi
+    words.forEach((word, index) => {
+        word.style.animationDelay = `${index * 1.5}s`;
     });
-  </script>
 
-<script>
-  // Hilangkan preloader, tampilkan intro
-  window.addEventListener('load', function () {
-      const preloader = document.getElementById('preloader');
-      const intro = document.getElementById('intro');
-      const words = document.querySelectorAll('.intro-word');
+    // Hapus intro setelah semua animasi selesai
+    setTimeout(() => {
+        intro.style.display = 'none';
+        document.body.style.backgroundColor = "#052572"; // Set warna BG eksplisit
+    }, (words.length * 1500) + 1000);
+});
 
-      preloader.style.display = 'none'; // Sembunyikan preloader
 
-      // Tampilkan intro setelah preloader
-      intro.classList.remove('hidden');
-      words.forEach((word, index) => {
-          word.style.setProperty('--delay', index + 1); // Tambahkan delay per kata
-      });
-
-      // Hapus intro setelah animasi selesai
-      setTimeout(() => {
-          intro.style.display = 'none';
-      }, words.length * 3000 + 1000); // Durasi kata * waktu animasi
-  });
 </script>
 
 </body>
