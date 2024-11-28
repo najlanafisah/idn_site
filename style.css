@@ -125,8 +125,37 @@ section {
 
 .landing-img img {
     margin: 0;
-    animation: float 3s ease-in-out infinite;
+    animation: float 3s ease infinite;
 }
+
+.landing-img-tv, .landing-img-toga, .landing-img-idn {
+    position: absolute; 
+    animation: float 3s ease-in-out infinite; /* animasi sama */
+    transform: translateY(-50%); /* untuk menyelaraskan vertikal */
+}
+
+.landing-img-tv {
+    top: 50%; 
+    left: 79%; 
+    z-index: 2; 
+}
+
+.landing-img-toga {
+    top: 60%;
+    left: 53%;
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+
+.landing-img-idn {
+    top: 0%; 
+    left: 62%; 
+    z-index: 3; 
+}
+
+
+
+
 
 @keyframes float {
 
