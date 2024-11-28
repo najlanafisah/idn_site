@@ -9,54 +9,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-  <!-- Preloader -->
-  <div id="preloader" class="preloader">
+<!-- Preloader -->
+<div id="preloader" class="preloader">
     <img src="assets/logo idn.png" alt="Logo Preloader" class="preloader-logo">
-  </div>
+</div>
 
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="img-logo">
-        <img src="assets/logo idn.png" alt="logo" width="70">
-    </div>
-    <ul class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact</a>
-    </ul>
-  </nav>
-  <!-- end navbar -->
-  <section>
-    <div class="container" style="position: relative;">
-      <div class="highlight-bar"></div>
-      <div class="landing-desc">
-          <h1>IDN Boarding School</h1>
-          <p><strong>Sekolahnya jagoan IT, Pinter ngaji</strong></p>
-      </div>
-      <div class="landing-img">
-          <img src="assets/badan.svg" alt="landing-img" width="650">
-      </div>
-    </div>
-  </section>
-
-  <section class="major">
-    <div class="container">
-        <div class="circle-bg">
-
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="img-logo">
+            <img src="assets/logo idn.png" alt="logo" width="70">
         </div>
-    </div>
-  </section>
-  <script>
-    // JavaScript to hide preloader after the page has loaded
-    window.addEventListener('load', function() {
-      const preloader = document.getElementById('preloader');
-      preloader.style.display = 'none';
-    });
-  </script>
+        <ul class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </ul>
+    </nav>
+    <!-- end navbar -->
+    <section>
+        <div class="container" style="position: relative;">
+            <div class="highlight-bar"></div>
+            <div class="landing-desc">
+                <h1>IDN Boarding School</h1>
+                <p><strong>Sekolahnya jagoan IT, Pinter ngaji</strong></p>
+            </div>
+            <div class="landing-img">
+                <img src="assets/badan.svg" alt="landing-img" width="650">
+            </div>
+        </div>
+    </section>
+
+    <section class="major">
+        <div class="jurusan-container">
+            <div class="jurusan-desc">
+                <h2>Jurusan Apa Saja Yang Terbuka?</h2>
+                <p>
+                    Selain jenjang SMP dengan bekal ilmu agama dan IT pada level dasar, IDN Boarding School juga
+                    menawarkan jenjang SMK dengan bekal ilmu agama dan IT pada level lanjutan. SMK IDN Boarding School
+                    menawarkan 3 jurusan yang relevan dan dibutuhkan di era modern, yakni:
+                </p>
+            </div>
+            <div class="jurusan-cards">
+                <div class="jurusan-card">
+                    <div class="icon">
+                        <img src="assets/rpl.png" alt="Programmer Icon" width="100">
+                    </div>
+                    <div class="desc">
+                        <h3>Jurusan Programmer</h3>
+                        <p>
+                            Mempelajari Pemrograman Web & Mobile. PHP, MySQL, CSS, Laravel Framework, Android Flutter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to hide preloader after the page has loaded
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            preloader.style.display = 'none';
+        });
+    </script>
 </body>
 
 </html>
