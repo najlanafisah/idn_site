@@ -48,7 +48,7 @@ body {
     background-color: #052572 !important;
 }
 
-#preloader {
+/* #preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -68,7 +68,7 @@ body {
 =======
     animation: spin 3s infinite linear;
 >>>>>>> 2470afe593d335d1eaa1f280095edc979e406cf5
-}
+} */
 
 
 @keyframes spin {

@@ -1896,7 +1896,7 @@ video
   border-radius: 50%;
   border: 0;
   outline: 0;
-  background: #F72485;
+  background: white;
   cursor: pointer;
   background-size: 200% 200%;
   background-position: left bottom;
@@ -1920,7 +1920,7 @@ video
 }
 .video__play > button i {
   font-size: 6.5rem;
-  color: white;
+  color: #345ECE;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;

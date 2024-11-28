@@ -1,0 +1,106 @@
+.half-circle-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #0A1A40;
+}
+
+.half-circle-bg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 300%;
+    background: linear-gradient(0deg, rgba(5, 37, 114, 0.00) 0%, rgba(7, 54, 166, 0.08) 0%, rgba(9, 64, 196, 0.12) 0%, rgba(9, 66, 204, 0.13) 39.1%, rgba(9, 70, 216, 0.15) 100%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.jurusan-section {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+}
+
+.content-container {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.jurusan-desc {
+    max-width: 40rem;
+}
+
+.jurusan-desc h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-align: left;
+    max-width: 30rem;
+    margin: 3rem 0 0 0;
+}
+
+.jurusan-desc p {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    text-align: left;
+    line-height: 1.6;
+    margin: 4rem 0 0 0;
+    max-width: 30rem;
+}
+
+.jurusan-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+.jurusan-card {
+    display: flex;
+    background-color: #23143F;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 40rem;
+    box-shadow: -15px -10px 26.9px 0px rgba(0, 0, 0, 0.25) inset, 0px -8px 30.8px 0px rgba(1, 200, 255, 0.53);
+    text-align: left;
+}
+
+.jurusan-card .icon {
+    background: linear-gradient(151deg, #3C21A6 18.05%, #3F24AE 59%, #4D25F3 105.56%);
+    box-shadow: 0px 13px 17.7px 0px rgba(1, 200, 255, 0.21) inset;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon img {
+    margin: 1.5rem 0 0 1.3rem;
+}
+
+.desc {
+    margin-left: 2rem;
+}
+
+.jurusan-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.jurusan-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--text-color);
+}
