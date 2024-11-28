@@ -66,6 +66,50 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+/* Intro container */
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--primary);
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900; /* Lebih rendah dari preloader */
+}
+
+/* Default state */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Word styles */
+.intro-word {
+    opacity: 0;
+    animation: fade-in 3s ease-in-out forwards;
+    animation-delay: calc(var(--delay) * 1s); /* Delay per kata */
+}
+
+/* Fade-in keyframes */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* navbar */
 .navbar {
     position: fixed;

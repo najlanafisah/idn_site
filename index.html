@@ -14,6 +14,12 @@
     <img src="assets/logo idn.png" alt="Logo Preloader" class="preloader-logo">
   </div>
 
+  <div id="intro" class="intro hidden"></div>
+    <div class="intro-word">Innovative</div>
+    <div class="intro-word">Faithful</div>
+    <div class="intro-word">Empowered</div>
+</div>
+
 <body>
 
   <!-- Navbar -->
@@ -65,6 +71,29 @@
       preloader.style.display = 'none';
     });
   </script>
+
+<script>
+  // Hilangkan preloader, tampilkan intro
+  window.addEventListener('load', function () {
+      const preloader = document.getElementById('preloader');
+      const intro = document.getElementById('intro');
+      const words = document.querySelectorAll('.intro-word');
+
+      preloader.style.display = 'none'; // Sembunyikan preloader
+
+      // Tampilkan intro setelah preloader
+      intro.classList.remove('hidden');
+      words.forEach((word, index) => {
+          word.style.setProperty('--delay', index + 1); // Tambahkan delay per kata
+      });
+
+      // Hapus intro setelah animasi selesai
+      setTimeout(() => {
+          intro.style.display = 'none';
+      }, words.length * 3000 + 1000); // Durasi kata * waktu animasi
+  });
+</script>
+
 </body>
 
 </html>
